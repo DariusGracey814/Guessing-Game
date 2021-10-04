@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guess The Number</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Welcome to the guessing game test your luck and find out if you have what it takes to win" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Press+Start+2P&display=swap" rel="stylesheet" /> 
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <link rel="shortcut icon" href="img/guessing-favicon.png" type="image/png" />
+
+    <body aria-label="background image of pine trees and mountains high rising into the atmosphere">
+        <div class="topContentWrap">
+            <button type="reset" class="btn reset">Play Again</button>
+            <h1 id="gameLogo">Guessing Game</h1>
+            <h2 class="enterNumber">Enter a Number between 1 - 30</h2>
+        </div>
+
+        <main aria-label="Main page content" id="pageContent">
+
+            <section>
+                <div class="container">
+                    <div class="number"><span class="num">?</span></div>
+                    <div class="contentWrap">
+                        <div class="gameContent d-2" id="border-right">
+                            <h2 class="enterText">Enter Number your Guess 👇</h2>
+                            <input type="number" class="guess" />
+                            <button type="submit" class="btn check">Check</button>
+                        </div>
+                        <div class="gameContent" id="border-left">
+                            <p class="message guessHeading">Start Guessing ...</p>
+                            <p class="text-size" id="mobileScore">💥 Score: <span class="score">20</span></p>
+                            <p class="text-size">🏆 Highscore: <span class="highscore">0</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+
+    <script src="script.js"></script>
+    </body>
+</html>
